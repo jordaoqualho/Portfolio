@@ -45,12 +45,12 @@ header {
 .sidebar {
 	position: fixed;
 	z-index: 1;
-	right: -300px;
-	width: 300px;
+	right: -350px;
+	width: 350px;
 	height: 100%;
 	background-color: var(--green);
 	font-family: var(--font);
-	transition: 1s ease-in-out;
+	transition: .6s ease-in-out;
 }
 
 .sidebar ul li {
@@ -64,7 +64,7 @@ header {
 
 .sidebar ul li:hover {
 	background-color: white;
-	transition: 1s;
+	transition: .7s;
 }
 
 .sidebar.ativo {
@@ -76,7 +76,7 @@ header {
 	padding-top: 10px;
 	padding-right: 15px;
 	top: 15px;
-	right: 315px;
+	right: 365px;
 	display: flex;
 	justify-content: center;
 	width: 40px;
@@ -291,13 +291,14 @@ header {
 	height: 100%;
 }
 .hab {
-	height: 20px;
+	height: 25px;
 	position: absolute;
-	width: 100px;
+	width: 130px;
 	text-align: center;
 	background-color: var(--gray);	
 	color: white;
 	text-transform: uppercase;
 	font-family: var(--font);
-	padding: 5px 10px 0px 10px;	
+	font-size: 14pt;
+	line-height: 28px;
 }
