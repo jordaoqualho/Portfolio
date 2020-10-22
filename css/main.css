@@ -206,6 +206,15 @@ header {
 	margin: 0 auto;
 	
 }
+.container-about {
+	box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 2000px;
+	padding: 0 10px;
+	width: fit-content;
+	height: 100%;
+		
+}
 .about-title {
 	text-align: center;
 	font-family: var(--font);
@@ -215,15 +224,13 @@ header {
 }
 .quem {
 	background-color: white;
-	width: 40%;
-	float: left;	
-	margin: 50px;
+	width: fit-content;
+	float: left;		
 }
 .habilidades {
 	background-color: white;
-	width: 40%;
-	float: left;
-	margin: 30px;
+	width: 600px;
+	float: right;	
 }
 .foto {
 	width: 400px;
@@ -281,9 +288,9 @@ header {
 
 .container-bar {
 	background-color: rgb(173, 173, 173, 0.2);	
-	margin-bottom: 10px;
+	margin-bottom: 15px;	
 	height: 25px;
-	width: 90%;
+	width: 100%;
 }
 .preenchimento {	
 	float: left;
