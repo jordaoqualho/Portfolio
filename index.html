@@ -16,30 +16,41 @@
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
    </head>
    <body>
-      <header>
+      <header id="home">
          <div class="sidebar">
-            <div class="menu">
+            <div class="menu" >
                <div class="hamburguer"></div>
             </div>
             <ul>
-               <li>Início</li>
-               <li>Sobre mim</li>
-               <li>Projetos</li>
-               <li>Contato</li>
+               <a href="#home">
+                  <li>Início</li>
+               </a>
+               <a href="#about">
+                  <li> Sobre mim </li>
+               </a>
+               <a href="#projetos">
+                  <li>Projetos</li>
+               </a>
+               <a href="#contato">
+                  <li>Contato</li>
+               </a>
             </ul>
          </div>
-         <div class="texto">
+         <div class="texto" >
             <h1 class="line anim-digitar">Olá, meu nome é
                <span class="nome">Jordão Qualho.</span>
             </h1>
             <div class="button-box">
-               <button class="button">Veja meus projetos</button>
+               <a href="#projetos">
+                  <button class="button">Veja meus projetos</button>
+               </a>
+               
             </div>
          </div>
       </header>
       <hr class="barra">
       <section class="about">
-         <div class="container-about">
+         <div class="container-about" id="about">
             <div class="about-title">
                <h1>SOBRE MIM</h1>
             </div>
@@ -107,8 +118,8 @@
             </div>      
          </div>   
       </section>        
-      <section class="projetos">
-         <div class="container-projetos">            
+      <section class="projetos" >
+         <div class="container-projetos" id="projetos">            
             <h1>
                PROJETOS
             </h1>
@@ -123,12 +134,19 @@
          </div>
       </section>     
       <section class="contato">
-         <div class="contato-container">
+         <div class="contato-container" id="contato">
             <h1>Quer falar comigo?</h1>
             <div class="contato-inputs">
                <input class="input" type="text" placeholder="Nome">
                <input class="input" type="text" placeholder="Email">
                <input class="input mensagem" type="text" placeholder="Sua mensagem">
+               <button class="button-enviar">ENVIAR</button>
+               <div class="get-top">
+                  <a href="#home">
+                     <button class="button-top">VOLTAR AO INICIO</button>                  
+                  </a>
+               </div>
+               
             </div>
          </div>
 

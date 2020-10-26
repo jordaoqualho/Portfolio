@@ -9,6 +9,9 @@ button:focus {
   outline: none;
   box-shadow: none;
 }
+a {
+	text-decoration: none;
+}
 
 ::-webkit-scrollbar-track {
 	background-color: var(--gray);
@@ -193,8 +196,7 @@ header {
 	cursor: pointer;
 }
 
-.button:hover {
-	
+.button:hover {	
 	color: var(--gray);
 	background-color: var(--green);
 }
@@ -369,7 +371,7 @@ header {
 .contato-inputs {
 	margin: 0 auto;
 	height: fit-content;
-	width: 400px;
+	width: 50%;
 	display: block;	
 }
 .input {
@@ -383,8 +385,53 @@ header {
 	margin-bottom: 5px;
 	outline: none;
 	padding: 10px 15px;	
-	padding-right: 0px;
+	padding-right: 0px;	
+  box-sizing: border-box;
 }
 .mensagem {
 	padding-bottom: 150px;
+}
+.get-top{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.button-top {
+	background-color: var(--gray);
+	color: var(--green);
+	border: none;
+	font-family: var(--font);
+	font-size: 18px;
+	margin-top: 35px;
+	cursor: pointer;
+}
+.button-top::after{
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background-color: var(--green);
+	margin: auto;
+}
+.button-top:hover::after {
+	width: 100%;
+	transition: .5s ease;
+}
+.button-enviar{
+	padding: 15px 40px 15px 40px;	
+	text-align: center;
+	border: 2px solid var(--green);
+	border-radius: 10px;
+	background-color: var(--gray);
+	color: var(--green);
+	font-family: var(--font);
+	float: right;
+	font-size: 18px;
+	transition: .3s ease;
+}
+.button-enviar:hover {
+	background-color: var(--green);
+	color: var(--gray);
+	transition: .3s ease;
 }
