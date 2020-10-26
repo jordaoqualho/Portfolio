@@ -219,7 +219,7 @@ header {
 	font-family: var(--font);
 	font-size: 3.5vw;
 	color: #545453;
-	padding: 80px;
+	padding: 100px;
 }
 .quem {
 	background-color: white;
@@ -307,4 +307,84 @@ header {
 	font-family: var(--font);
 	font-size: 14pt;
 	line-height: 28px;
+}
+
+.projetos {
+	background-color: whitesmoke;
+	height: 100vh;
+	position: flex;
+	align-items: center;
+	justify-self: center;
+}
+.container-projetos {
+	width: fit-content;	
+	font-family: var(--font);
+	margin: 0 auto;
+	font-size: 3vw;	
+}
+.container-projetos h1{
+	padding: 50px;
+	text-align: center;
+	color: var(--gray);	
+}
+.projetos-box {
+	width: fit-content;
+	display: flex;
+}
+.card {
+  width: 350px;
+	height: 500px;
+	border-radius: 10px;
+	margin: 20px;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+.projeto1{
+	background: transparent url("../img/dog.png") no-repeat; 
+  background-size: cover;
+  background-position: center center;  
+}
+.card:hover {
+	cursor: pointer;
+	height: 520px;	
+	width: 350px;
+	transition: 0.5s ease;
+}
+.contato {
+	height: 600px;
+	align-items: center;
+	background-color: var(--gray);
+	display: flex;
+}
+.contato-container {
+	font-family: var(--font);
+	color: white;
+	font-size: 40px;
+	margin: auto;
+	text-align: center;
+}
+.contato-container h1{
+	text-align: center;
+	padding: 50px;
+}
+.contato-inputs {
+	margin: 0 auto;
+	height: fit-content;
+	width: 400px;
+	display: block;	
+}
+.input {
+	width: 100%;
+	background: var(--green);
+	font-size: 22px;
+	border: none;
+	border-radius: 5px;
+	font-family: var(--font);
+	color: var(--gray);
+	margin-bottom: 5px;
+	outline: none;
+	padding: 10px 15px;	
+	padding-right: 0px;
+}
+.mensagem {
+	padding-bottom: 150px;
 }
