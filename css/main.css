@@ -341,10 +341,16 @@ header {
 	box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
 }
 .projeto1{
-	background: transparent url("../img/dog.png") no-repeat; 
+  background: transparent url("../img/dog.png") no-repeat; 
   background-size: cover;
   background-position: center center;  
 }
+.projeto2{
+	background: transparent url("../img/lorena.png") no-repeat; 
+	background-size: cover;
+	background-position: -240px;  
+}
+  
 .card:hover {
 	cursor: pointer;
 	height: 520px;	

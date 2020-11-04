@@ -1,5 +1,6 @@
 const menu = document.querySelector('.menu');
 const sidebar = document.querySelector('.sidebar');
+const sidebarOption = document.querySelector('.sidebar ul');
 let menuOpen = false;
 menu.addEventListener('click', () => {
   if (!menuOpen) {
@@ -9,8 +10,14 @@ menu.addEventListener('click', () => {
   } else {
     menu.classList.remove('open');
     sidebar.classList.remove('ativo');
+    menuOpen = false;    
+  }
+})
+sidebarOption.addEventListener('click', () =>{
+  if (menuOpen) {
+    menu.classList.remove('open');
+    sidebar.classList.remove('ativo');
     menuOpen = false;
-    
   }
 })
 
