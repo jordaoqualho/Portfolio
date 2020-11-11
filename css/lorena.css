@@ -1,46 +1,43 @@
 :root {
-	--brow: rgb(124, 61, 40);
-	--gray: rgb(42, 42, 42);
-	--font1: font-family: 'Abril Fatface', cursive;
-	--font2: font-family: 'Lobster', cursive;
+    --brow: rgb(124, 61, 40);
+    --gray: rgb(42, 42, 42);
+    --font1: font-family: 'Abril Fatface', cursive;
+    --font2: font-family: 'Lobster', cursive;
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: peachpuff;
-	border-radius: 10px;
+    background-color: peachpuff;
+    border-radius: 10px;
 }
 
-h1,
-h2,
-h3,
-h4 {
-	margin: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
+
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 body,
 html {
-	margin: 0;
-	padding: 0;
-	min-width: 100%;
-	width: 100%;
-	max-width: 100%;
-	min-height: 200%;
-	height: 100%;
-	max-height: 100%;
-	-webkit-font-smoothing: antialiased;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-	font-family: 'Open Sans', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	overflow-x: hidden;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 200%;
+    height: 100%;
+    max-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 #preloader {
@@ -55,22 +52,23 @@ html {
     background-color: white;
     z-index: 999;
 }
+
 .progress {
     width: 40vw;
-    background-color:white;
+    background-color: white;
     border: 1px solid peachpuff;
     height: 6px;
 }
-.progress-bar{
+
+.progress-bar {
     background-color: peachpuff;
     height: 100%;
-    animation: loading 1s linear ;
+    animation: loading 1s linear;
 }
 
 @keyframes loading {
     from {
         width: 0;
-    
     }
     to {
         width: 100%;
@@ -84,101 +82,4 @@ html {
     to {
         opacity: 0;
     }
-}
-
-
-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	position: fixed;
-	height: 50px;
-	font-size: 18px;
-	z-index: 10;
-	font-family: var(--font1);
-}
-
-.menu-container a{
-	width: fit-content;
-	display: flex;
-	height: 100%;
-	justify-content: center;
-	align-items: center;
-}
-
-.menu-container ul {
-	list-style: none;
-	padding-left: 0;
-	background-color: peachpuff;
-	justify-content: center;
-	display: flex;
-	border-radius: 15px;
-	line-height: 50px;
-	text-align: center;
-	cursor: pointer;
-	transition: .5s ease;
-}
-
-.menu-container ul li:hover {
-	background-color: var(--brow);
-	transition: 0.5s ease;
-}
-
-.menu-container ul li {
-	display: inline;
-	padding: 0px 25px 0 25px;
-	border-radius: 15px;
-	color: white;
-}
-
-.fotodiv {
-	height: 100vh;
-	position: fixed;
-	z-index: -1;
-}
-
-.foto {
-	width: 100%;
-	height: 100vh;
-	object-fit: cover;
-}
-
-.welcome {
-	height: 100vh;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.title-container {
-	width: fit-content;
-	height: fit-content;
-	margin: 0 auto;
-}
-
-.title {
-	color: peachpuff;
-	font-size: 60px;
-	padding: 0;
-	font-family: 'Abril Fatface', cursive;
-}
-
-.sub-title {
-	color: white;
-	padding-left: 0;
-	font-size: 28px;
-	font-family: 'Lobster', cursive;
-}
-
-.about {
-	background-color: #fff;
-	height: 600px;
-	width: 100%;
-}
-
-.about-container {
-	width: 100%;
-	height: 100%;
 }
