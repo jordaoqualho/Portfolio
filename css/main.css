@@ -1,8 +1,13 @@
 :root {
     --green: #67F891;
     --gray: #545453;
-    --font: 'CostaRicaNormal';
+    --font: costaRica;
     --font2: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: costaRica;
+    src: url(./costa-rica.otf);
 }
 
 button:focus {
