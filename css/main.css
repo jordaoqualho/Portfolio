@@ -444,28 +444,28 @@ header {
 
 .projetos {
   background-color: whitesmoke;
-  height: 100vh;
   position: flex;
   align-items: center;
   justify-self: center;
 }
 
 .container-projetos {
-  width: fit-content;
+  width: 100%;
   font-family: var(--font);
   margin: 0 auto;
-  font-size: 3vw;
 }
 
 .container-projetos h1 {
   padding: 50px;
   text-align: center;
   color: var(--gray);
+  font-size: 45px;
 }
 
 .projetos-box {
   width: fit-content;
   display: flex;
+  flex-direction: column;
 }
 
 .card {
@@ -493,6 +493,62 @@ header {
   cursor: pointer;
   width: 700px;
   transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 480px) {
+  .projetos {
+    background-color: whitesmoke;
+    display: block;
+    overflow: auto;
+    position: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  
+  .container-projetos {
+    width: fit-content;
+    font-family: var(--font);
+    margin: 0 auto;
+    font-size: 3vw;
+  }
+  
+  .container-projetos h1 {
+    padding: 50px;
+    text-align: center;
+    color: var(--gray);
+  }
+  
+  .projetos-box {
+    width: fit-content;
+    display: flex;
+  }
+  
+  .card {
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease;
+  }
+  
+  .projeto1 {
+    background: transparent url("../src/img/dog.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .projeto2 {
+    background: transparent url("../src/img/lorena.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    width: 700px;
+    transition: 0.5s ease;
+  }
 }
 
 /*----------------Estilização do Contato-----------------*/
