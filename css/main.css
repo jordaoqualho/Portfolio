@@ -76,11 +76,14 @@ header {
 
 .sidebar ul li {
   list-style: none;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--gray);
   text-align: center;
   cursor: pointer;
-  font-size: 3vw;
-  padding: 40px 24px;
+  font-size: 50px;
 }
 
 .sidebar ul li:hover {
@@ -238,6 +241,9 @@ header {
 
   .sidebar ul li {
     font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 25%;
   }
 
@@ -466,6 +472,7 @@ header {
   align-items: center;
   display: flex;
   flex-direction: row;
+  margin-bottom: 50px;
 }
 
 .card {
