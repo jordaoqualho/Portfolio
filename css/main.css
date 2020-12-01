@@ -299,8 +299,9 @@ header {
 
 .habilidades {
   background-color: white;
-  width: 50%;
-  float: right;
+  width: 40%;
+  padding-left: 5%;
+  float: left;
 }
 
 .foto {
@@ -373,6 +374,7 @@ header {
   float: left;
   background-color: var(--green);
   height: 100%;
+  padding-left: 130px;
 }
 
 .hab {
