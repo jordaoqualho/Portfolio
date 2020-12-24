@@ -286,7 +286,7 @@ header {
 .about-title {
   text-align: center;
   font-family: var(--font);
-  font-size: 3.5vw;
+  font-size: 45px;
   color: #545453;
   padding: 50px;
 }
