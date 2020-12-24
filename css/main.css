@@ -465,6 +465,7 @@ header {
   width: 100%;
   font-family: var(--font);
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .container-projetos h1 {
@@ -475,18 +476,17 @@ header {
 }
 
 .projetos-box {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-column-gap: 2px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
+
 .card {
-  width: 350px;
   height: 500px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   transition: 0.5s ease;
@@ -508,12 +508,6 @@ header {
   background: transparent url("../src/img/labmanager.png") no-repeat;
   background-size: cover;
   background-position: center center;
-}
-
-.card:hover {
-  cursor: pointer;
-  width: 700px;
-  transition: 0.5s ease;
 }
 
 .hide {
@@ -588,7 +582,7 @@ header {
 .contato-inputs {
   margin: 0 auto;
   height: fit-content;
-  width: 50%;
+  width: 450px;
   display: block;
 }
 
@@ -653,6 +647,7 @@ header {
   float: right;
   font-size: 18px;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .button-enviar:hover {
